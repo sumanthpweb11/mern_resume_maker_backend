@@ -21,7 +21,10 @@ app.use(
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: [
+      "http://localhost:3000",
+      "https://mern-resumemaker-app.onrender.com",
+    ],
     // credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE"],
   })
